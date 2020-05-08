@@ -1,0 +1,256 @@
+@import url('https://fonts.google.com/specimen/Libre+Franklin');
+
+
+
+/* reset browser css */
+*, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* colors */
+:root{
+    --primary-blue: hsl(223, 87%, 63%);
+    --secondary-blue: hsl(223, 100%, 88%);
+    --secondary-red: hsl(354, 100%, 66%);
+    --neutral-gray: hsl(0, 0%, 59%);
+    --neutral-blue: hsl(209, 33%, 12%);
+}
+
+
+
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
+
+img, svg{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrap{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrap_inner{
+    width: 50%;
+    margin: auto;
+}
+
+
+.logo{
+    padding: 2rem 0;
+    width: 10%;
+    margin: auto;
+}
+
+
+h1{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--neutral-blue);
+}
+
+h1 span{
+    font-weight: 100;
+    color: var(--neutral-gray);
+}
+
+
+
+p{
+    font-size: 1rem;
+    color: var(--neutral-blue);
+    padding: 1rem 0;
+}
+
+
+form{
+    padding: 1rem 0 2rem 0;
+}
+
+
+form input{
+    width: 50%;
+    padding: 0.9rem 1.5rem;
+    box-shadow: 0 0 2px var(--neutral-gray);
+    border: 0;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    background-color: transparent;
+    margin-right: 0.2rem;
+}
+
+
+form button{
+    width: 30%;
+    padding: 1rem;
+    background-color: var(--primary-blue);
+    border: 0;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-left: 0.2rem;
+    border-radius: 2rem;
+    box-shadow: -2px 4px 4px var(--neutral-gray);
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background-color: blue;
+}
+
+form input:focus,
+form button:focus{
+    outline: none;
+}
+
+
+.dashboard{
+    margin: auto;
+    width: 75%;
+}
+
+
+
+
+.social{
+    width: 50%;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social svg{
+    width: 20px;
+    height: 20px;
+    margin: 0 1rem;
+}
+
+
+
+
+
+footer p{
+    font-size: 0.7rem;
+    padding: 0;
+    color: var(--neutral-gray);
+}
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media(max-width: 768px){
+    .wrap{
+        height: auto;
+    }
+    .wrap_inner{
+        width: 80%;
+    }
+}
+
+
+@media(max-width: 430px){
+    .wrap{
+        height: auto;
+    }
+    .wrap_inner{
+        width: 95%;
+    }
+
+
+
+    .dashboard{
+        width: 80%;
+    }
+  
+    .logo{
+        width: 20%;
+    }
+
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+
+    p{
+        font-size: 0.9rem;;
+    }
+
+
+    form input{
+        display: block;
+        width: 80%;
+        padding: 0.9rem 1.5rem;
+        font-size: 0.8rem;
+        margin: 0 auto 1rem auto;
+    }
+
+
+    form button{
+        display: block;
+        width: 80%;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+        margin: auto;
+        box-shadow: -2px 2px 4px var(--neutral-gray);
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* js class */
+
+#error{
+    display: block;
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    padding-top: 0.2rem;
+    color:var(--secondary-red);
+}
