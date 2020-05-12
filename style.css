@@ -158,7 +158,7 @@ footer p{
 
 
 /* media queries */
-@media(max-width: 768px){
+@media screen and(max-width: 768px){
     .wrap{
         height: auto;
     }
@@ -168,7 +168,7 @@ footer p{
 }
 
 
-@media(max-width: 430px){
+@media screen and(max-width: 430px){
     .wrap{
         height: auto;
     }
